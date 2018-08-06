@@ -1,0 +1,10 @@
+sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-28.noarch.rpm https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-28.noarch.rpm
+
+sudo dnf install -y broadcom-wl kmod-wl
+
+sudo akmods --force
+
+sudo depmod -a
+
+sudo modprobe wl
+
